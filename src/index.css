@@ -5,6 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(
+    to right bottom,
+    black,
+    maroon,
+    darkgoldenrod,
+    maroon,
+    black
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 20px;
+  row-gap: 20px;
 }
 
 code {

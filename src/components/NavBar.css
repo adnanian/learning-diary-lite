@@ -1,18 +1,26 @@
 /* UPDATE CSS FILE LATER */
 
+
 .nav-link{
     display: inline-block;
     box-sizing: border-box;
-    width: 60px;
-    padding: 5px;
+    width: max-content;
+    padding: 10px;
     margin: 0 6px 6px;
-    background: blue;
+    background: linear-gradient(
+        to bottom right,
+        blue,
+        skyblue
+    );
     text-decoration: none;
     text-align: center;
-    font-size: min(10vw, 15px) ;
+    font-size: min(10vw, 30px) ;
     color: white;
+    border-width: 3px;
+    border-color: darkblue;
+    border-style: double;
 }
   
 .active {
-    color: red;
+    color: gold;
 }
