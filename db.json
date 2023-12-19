@@ -1,0 +1,27 @@
+{
+    "reflectionQuestions": [
+        {
+          "prompt": "Did I enjoy it?",
+          "type": "yes-or-no",
+          "id": 1
+        },
+        {
+          "prompt": "Will I benefit from this?",
+          "type": "yes-or-no",
+          "id": 2
+        },
+        {
+          "prompt": "How does this connect to me?",
+          "type": "open",
+          "id": 3
+        },
+        {
+          "prompt": "Try applying this in the real world.",
+          "type": "task",
+          "id": 4
+        }
+    ],
+    "notes": [
+        
+    ]
+}
