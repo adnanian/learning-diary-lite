@@ -1,0 +1,14 @@
+#welcome-banner {
+    border-color: darkgoldenrod;
+    border-style: double;
+    border-width: 4px;
+    background-image: linear-gradient(
+        to right,
+        silver,
+        lightgray,
+        white,
+        lightgray,
+        silver
+    );
+    text-align: center;
+}

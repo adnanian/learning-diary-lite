@@ -1,0 +1,10 @@
+tr td {
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #002;
+    text-align: left;
+}
+
+td {
+    padding: 0 15px;
+}

@@ -1,0 +1,28 @@
+#reflection-tab {
+    background-image: linear-gradient(
+        to bottom left,
+        royalblue,
+        skyblue,
+        cyan,
+        skyblue,
+        royalblue
+    );
+    float: right;
+    padding: 0 15px;
+    margin: 0 30px;
+    text-align: center;
+    border-width: 8px;
+    border-style: dashed;
+    border-color: #004;
+}
+
+#reflection-table {
+    padding-bottom: 20px;
+}
+
+.reflection-table-header  {
+    border-style: dotted;
+    border-width: 2px;
+}
+
+
