@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import '../page-stylesheets/Notes.css';
 import ContentTableRow from '../components/ContentTableRow';
 
-function Notes() {
+function NotesView() {
     useEffect(() => {
         fetch('http://localhost:3000/reflectionQuestions')
             .then((response) => response.json())
@@ -52,4 +52,4 @@ function Notes() {
     )
 }
 
-export default Notes;
+export default NotesView;

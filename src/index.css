@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#error-banner {
+  border-color: indigo;
+  border-style: double;
+  border-width: 5px;
+  background: linear-gradient(
+    to right,
+    red,
+    hotpink,
+    red
+  );
+  color: purple;
+  text-align: center;
+  font-weight: bold;
+}
+
+.to-be-added {
+  background-color: pink;
+  text-align: center;
+  border-color: blue;
+  border-style: double;
+  border-width: 4px;
+}

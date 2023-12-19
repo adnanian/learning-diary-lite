@@ -6,7 +6,7 @@ function ErrorPage() {
 
   return (
     <main>
-      <h1>An error occured when attempting to load the page. Please try again lter.</h1>
+      <h1 id="error-banner">An error occured when attempting to load the page. Please try again lter.</h1>
     </main>
   );
 };

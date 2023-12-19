@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-function NavBar({ logout }) {
+function NavBar() {
     return (
         <nav className="navigation">
             <NavLink
@@ -11,7 +11,7 @@ function NavBar({ logout }) {
                 Home
             </NavLink>
             <NavLink
-                to="/notes"
+                to="/notes-view"
                 className="nav-link"
             >
                 Notes
@@ -22,12 +22,6 @@ function NavBar({ logout }) {
             >
                 About
             </NavLink>
-            <button 
-                onClick={logout}
-                className="nav-link"
-            >
-                Logout
-            </button>
         </nav>
     );
 }
