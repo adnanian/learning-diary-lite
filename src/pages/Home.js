@@ -1,18 +1,7 @@
-import { useState, useEffect} from "react";
 import "../page-stylesheets/Home.css";
 
-function Home() {
-    useEffect(() => {
-        fetch('http://localhost:3000/entries')
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data);
-            setEntries(data);
-          });
-      }, []);
+function Home( {onAddNotebook} ) {
     
-    
-      const [entries, setEntries] = useState([]);
 
       const entryList = entries.map((entry) => {
         return (
@@ -28,6 +17,7 @@ function Home() {
                     {entryList}
                 </select>
             </div>
+            <button onClick={onAddNotebook(null)}>Click me</button>
         </main>
     );
 }
