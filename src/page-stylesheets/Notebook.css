@@ -61,4 +61,29 @@
     margin-bottom: 20px;
 }
 
+#notes-div {
+    border-style: ridge;
+    border-color: black;
+    border-width: var(--div-dash-border);
+    background-color: beige;
+}
+
+#notes-title {
+    text-align: center;
+    font-size: 30px;
+}
+
+#content-notes {
+    background: linear-gradient(
+        to right,
+        rgba(204, 151, 91, 0.904),
+        rgba(236, 214, 165, 0.904),
+        rgba(243, 241, 239, 0.904),
+        rgba(236, 214, 165, 0.904),
+        rgba(204, 151, 91, 0.904)
+    );
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 
