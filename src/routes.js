@@ -2,7 +2,8 @@ import App from "./App";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import ErrorPage from "./pages/ErrorPage";
-import NotesView from "./pages/NotesView";
+import ContentWishList from "./pages/ContentWishList";
+import Notebook from "./pages/Notebook";
 
 const routes = [
     {
@@ -12,11 +13,17 @@ const routes = [
         children: [
             {
                 path: "/",
-                element: <Home />
+                element: <Home />,
+                children: [
+                    {
+                        path: "/notebook/:id",
+                        element: <Notebook />
+                    }
+                ]
             },
             {
-                path: "/notes-view",
-                element: <NotesView />
+                path: "/content-wishlist",
+                element: <ContentWishList />
             },
             {
                 path: "/about",

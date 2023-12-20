@@ -1,3 +1,9 @@
+#notes-view {
+    display: inline-flex;
+    column-gap: 50px;
+    overflow: auto;
+}
+
 #reflection-tab {
     background-image: linear-gradient(
         to bottom left,
@@ -7,13 +13,27 @@
         skyblue,
         royalblue
     );
-    float: right;
     padding: 0 15px;
-    margin: 0 30px;
     text-align: center;
     border-width: 8px;
     border-style: dashed;
     border-color: #004;
+}
+
+#info-tab {
+    background-image: linear-gradient(
+        to bottom left,
+        olive,
+        lightgreen,
+        lime,
+        lightgreen,
+        olive
+    );
+    padding: 0 15px;
+    text-align: center;
+    border-width: 8px;
+    border-style: dashed;
+    border-color: #040;
 }
 
 #reflection-table {

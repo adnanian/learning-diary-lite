@@ -1,23 +1,31 @@
+import { Link, Outlet, useOutletContext } from "react-router-dom";
 import "../page-stylesheets/Home.css";
 
-function Home( {onAddNotebook} ) {
-    
+function Home(  ) {
+    const notebooks = useOutletContext();
 
-      const entryList = entries.map((entry) => {
+      const notebookList = notebooks.map((notebook) => {
+        if (notebook === null) {
+            return <li key={Math.random()} >REE</li>
+        }
         return (
-            <option key={entry.id} value={entry.title}>{entry.title}</option>
+            <li key={notebook.id}>
+                <Link to={`/notebook/${notebook.id}`}>{notebook.title}</Link>
+            </li>
         )
       });
+
+      console.log(notebookList);
 
     return (
         <main>
             <h1 id="welcome-banner">Welcome to Learning Diary Lite! Let's get back to journaling our learning! :D</h1>
             <div>
-                <select>
-                    {entryList}
-                </select>
+                <ul>
+                    {notebookList}
+                </ul>
             </div>
-            <button onClick={onAddNotebook(null)}>Click me</button>
+            <Outlet context={notebooks} />
         </main>
     );
 }

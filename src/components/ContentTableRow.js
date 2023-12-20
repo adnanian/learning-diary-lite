@@ -1,9 +1,13 @@
 import './ContentTableRow.css';
 
-function ContentTableRow( {rowNumber, propertyName, propertyValue} ) {
+function ContentTableRow( {
+    rowNumber = 0, 
+    propertyName, 
+    propertyValue
+} ) {
     return (
         <tr>
-            <td>{rowNumber}</td>
+            {rowNumber > 0 ? <td>{rowNumber}</td> : null}
             <td>{propertyName}</td>
             <td>{propertyValue}</td>
         </tr>

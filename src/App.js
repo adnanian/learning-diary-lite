@@ -8,7 +8,7 @@ function App() {
     fetch('http://localhost:3000/notebooks')
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        //console.log(data);
         setNotebooks(data);
       });
   }, []);
@@ -42,7 +42,7 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <Outlet context={entries} onAddNotebook={userOutletContext.addNotebook} />
+      <Outlet context={notebooks} />
     </>
   );
 }
