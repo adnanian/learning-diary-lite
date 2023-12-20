@@ -12,3 +12,15 @@
     );
     text-align: center;
 }
+
+#note-selector {
+    border-color: blue;
+    border-style: double;
+    border-width: 4px;
+    background-color: darkgray;
+    display: inline-flex;
+    column-gap: 30px;
+    width: 100%;
+    align-content: flex-end;
+    justify-content: center;
+}

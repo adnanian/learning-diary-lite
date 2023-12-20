@@ -10,6 +10,7 @@ function Notebook() {
             .then((response) => response.json())
             .then((data) => setReflectionQuestions(data));
     }, []);
+
     const [reflectionQuestions, setReflectionQuestions] = useState([]);
 
     // function addReflectionQuestion(newReflection) {
@@ -25,8 +26,14 @@ function Notebook() {
     */
     
     const params = useParams();
-    const notebook = useOutletContext().find((notebook) => notebook.id === parseInt(params.id));
+    const notebooks = useOutletContext();
+    const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
     const [notes, setNotes] = useState(!notebook ? "" : notebook.notes);
+
+    if (notebook) {
+        //setNotes(notebook.notes);
+        console.log(`Notebook: ${notebook.id} --------- Notebook Notes: ${notebook.notes} --------- Notes: ${notes}`);
+    }
     
 
     function handleUpdateNotes(event) {
@@ -48,6 +55,7 @@ function Notebook() {
                     cols="50" 
                     wrap="hard"
                     value={notes}
+                    maxLength="1000"
                     onChange={(event) => setNotes(event.target.value)}
                 >
                 </textarea>

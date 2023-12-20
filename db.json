@@ -37,7 +37,7 @@
           "year": 2017,
           "type": "book",
           "length": "288 pages",
-          "notes": "This was a great book.",
+          "notes": "This was an inspiring book.",
           "id": 2
         },
         {
@@ -46,7 +46,7 @@
           "year": 2017,
           "type": "documentary",
           "length": "6 episodes, each 43 minutes long",
-          "notes": "This was a great book.",
+          "notes": "What a BASED documentary",
           "id": 3
         }
     ],
