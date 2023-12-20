@@ -4,7 +4,7 @@ function InfoTable({ notebook }) {
     return (
         <div id="info-tab">
             <h1>Notebook #{!notebook ? "" : notebook.id}</h1>
-            <table>
+            <table id="info-table">
                 <tbody>
                     <ContentTableRow
                         propertyName="Title"

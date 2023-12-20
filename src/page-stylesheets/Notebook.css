@@ -1,7 +1,18 @@
+* {
+    --div-dash-border: 8px;
+}
+
 #notes-view {
     display: inline-flex;
     column-gap: 50px;
     overflow: auto;
+    margin: 10px 30px 20px 30px;
+}
+
+#left-tab {
+    display: list-item;
+    list-style: none;
+    row-gap: var(--div-dash-border);
 }
 
 #reflection-tab {
@@ -13,10 +24,7 @@
         skyblue,
         royalblue
     );
-    padding: 0 15px;
-    text-align: center;
-    border-width: 8px;
-    border-style: dashed;
+    
     border-color: #004;
 }
 
@@ -29,11 +37,15 @@
         lightgreen,
         olive
     );
+    border-color: #040;
+}
+
+#reflection-tab, #info-tab {
     padding: 0 15px;
     text-align: center;
-    border-width: 8px;
+    border-width: var(--div-dash-border);
     border-style: dashed;
-    border-color: #040;
+    height: fit-content;
 }
 
 #reflection-table {
@@ -43,6 +55,10 @@
 .reflection-table-header  {
     border-style: dotted;
     border-width: 2px;
+}
+
+#info-table {
+    margin-bottom: 20px;
 }
 
 
