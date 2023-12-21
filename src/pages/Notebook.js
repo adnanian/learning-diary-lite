@@ -3,6 +3,7 @@ import '../page-stylesheets/Notebook.css';
 import { useOutletContext, useParams } from 'react-router-dom';
 import InfoTable from '../components/InfoTable.js';
 import ReflectionTable from '../components/ReflectionTable';
+import Notes from '../components/Notes.js';
 
 function Notebook() {
     useEffect(() => {
@@ -28,12 +29,6 @@ function Notebook() {
     const params = useParams();
     const notebooks = useOutletContext();
     const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
-    const [notes, setNotes] = useState(!notebook ? "" : notebook.notes);
-
-    if (notebook) {
-        //setNotes(notebook.notes);
-        console.log(`Notebook: ${notebook.id} --------- Notebook Notes: ${notebook.notes} --------- Notes: ${notes}`);
-    }
     
 
     function handleUpdateNotes(event) {
@@ -46,20 +41,7 @@ function Notebook() {
                 <InfoTable notebook={notebook} />
                 <ReflectionTable reflectionQuestions={reflectionQuestions} />
             </div>
-            <div id="notes-div">
-                <h4 id="notes-title">Notes</h4>
-                <textarea 
-                    id="content-notes" 
-                    name="content-notes" 
-                    rows="15" 
-                    cols="50" 
-                    wrap="hard"
-                    value={notes}
-                    maxLength="1000"
-                    onChange={(event) => setNotes(event.target.value)}
-                >
-                </textarea>
-            </div>
+            <Notes notes={!notebook ? "" : notebook.notes}/>
             <div id="right-tab">
                 <button type="submit" onClick={handleUpdateNotes}>Save Notes</button>
             </div>
