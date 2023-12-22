@@ -6,18 +6,13 @@ import ReflectionTable from '../components/ReflectionTable';
 import Notes from '../components/Notes.js';
 
 function Notebook() {
-    useEffect(() => {
-        fetch('http://localhost:3000/reflectionQuestions')
-            .then((response) => response.json())
-            .then((data) => setReflectionQuestions(data));
-    }, []);
-
-    const [reflectionQuestions, setReflectionQuestions] = useState([]);
+    
 
     /*
     * Load notebook from outletcontext
     */
-    const [notebooks, setNotebooks] = useOutletContext();
+    const [notebooks, setNotebooks] = useOutletContext().notebooks;
+    const [reflectionQuestions, setReflectionQuestions] = useOutletContext().reflections;
     const params = useParams();
     const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
 
