@@ -25,10 +25,9 @@ function Notebook() {
     /*
     * Load notebook from outletcontext
     */
-    
+    const context = useOutletContext();
     const params = useParams();
-    const notebooks = useOutletContext();
-    const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
+    const notebook = context.notebooks.find((notebook) => notebook.id === parseInt(params.id));
 
     function saveNotes(updatedNotes) {
         fetch(`http://localhost:3000/notebooks/${notebook.id}`, {
@@ -43,7 +42,7 @@ function Notebook() {
             )
         })
             .then((response) => response.json())
-            .then((data) => console.log("It worked."));
+            .then((data) => context.onUpdateNotebook(data));
     }
 
     if (!notebook) {
@@ -56,7 +55,6 @@ function Notebook() {
                 <InfoTable notebook={notebook} />
                 <ReflectionTable reflectionQuestions={reflectionQuestions} />
             </div>
-            <p>{!notebook ? "" : notebook.notes}</p>
             <Notes notes={!notebook ? "" : notebook.notes} onSave={saveNotes}/>
             
         </article>

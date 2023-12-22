@@ -28,7 +28,7 @@
       "year": 2012,
       "type": "book",
       "length": "272 pages",
-      "notes": "This was a great book.",
+      "notes": "This was a great book.\n\nPeople should be learning at their own paces, and should learn beneficial stuff until they have mastered it until being labeled with some arbitrary standard of intelligence.\n\n- \"Never let schooling interfere with education\" - Mark Twain\n\nOur modern education system is from what Sal Khan calls \"the broken model\" (aka the Prussian Model)",
       "id": 1
     },
     {
@@ -37,7 +37,7 @@
       "year": 2017,
       "type": "book",
       "length": "288 pages",
-      "notes": "This was an inspiring book.\n\nPeople should be learning at their own paces, and should learn beneficial stuff until they have mastered it until being labeled with some arbitrary standard of intelligence.",
+      "notes": "This was an inspiring book.",
       "id": 2
     },
     {

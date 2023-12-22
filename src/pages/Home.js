@@ -16,17 +16,6 @@ function Home( ) {
     const [notebooks, setNotebooks] = useState([]);
     const [selectedValue, setSelectedValue] = useState("");
 
-    //   const notebookList = notebooks.map((notebook) => {
-    //     if (notebook === null) {
-    //         return <li key={Math.random()} >REE</li>
-    //     }
-    //     return (
-    //         <li key={notebook.id}>
-    //             <Link to={`/notebook/${notebook.id}`}>{notebook.title}</Link>
-    //         </li>
-    //     )
-    //   });
-
     const notebookList = notebooks.map((notebook) => {
         return (
             <option key={notebook.id} value={`/notebook/${notebook.id}`}>
@@ -34,6 +23,18 @@ function Home( ) {
             </option>
         );
     });
+
+    function updateNotebook(updatedNotebook) {
+        setNotebooks(notebooks.map((notebook) => {
+            return (notebook.id === updateNotebook.id) ? updateNotebook : notebook;
+        }));
+        console.log("It worked.");
+    }
+
+    const outletContextObject = {
+        notebooks: notebooks,
+        onUpdateNotebook: updateNotebook
+    }
 
     return (
         <main>
@@ -49,7 +50,7 @@ function Home( ) {
                     </b>
                 </span>
             </div>
-            <Outlet context={notebooks} />
+            <Outlet context={outletContextObject} />
             <br/>
         </main>
     );
