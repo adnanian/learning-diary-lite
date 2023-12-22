@@ -1,0 +1,24 @@
+#wishlist-page {
+    background: linear-gradient(
+        to bottom right,
+        olive,
+        #bb0,
+        yellow,
+        #bb0,
+        olive
+    );
+}
+
+#input-div {
+    display: inline-block;
+    margin: 0 50%;
+}
+
+.wishlist-element {
+    text-align: center;
+}
+
+#wishlist {
+    list-style: none;
+    background-color: orange;
+}
