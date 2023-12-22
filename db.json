@@ -164,5 +164,10 @@
       "id": 14
     }
   ],
-  "contentWishList": []
+  "learningWishList": [
+    {
+      "savedTitle": "Can't Hurt Me",
+      "id": 1
+    }
+  ]
 }

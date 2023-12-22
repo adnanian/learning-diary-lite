@@ -2,7 +2,7 @@ import "../page-stylesheets/About.css";
 
 function About() {
     return (
-        <div id="about-section">
+        <main id="about-section">
             <p id="about-text">
                 Learning Diary Lite is a web application that allows users to write educational
                 and beneficial content that they consume. It serves as a space for users to
@@ -11,7 +11,7 @@ function About() {
                 in the modern education system). With this handy tool, you never have to
                 buy another notebook again.
             </p>
-        </div>
+        </main>
     )
 }
 

@@ -11,10 +11,10 @@ function NavBar() {
                 Home
             </NavLink>
             <NavLink
-                to="/content-wishlist"
+                to="/learning-wishlist"
                 className="nav-link"
             >
-                Content Wishlist
+                Learning Wishlist
             </NavLink>
             <NavLink
                 to="/about"
