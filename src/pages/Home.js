@@ -15,15 +15,6 @@ function Home( ) {
     const [notebooks, setNotebooks] = useState([]);
     const [selectedValue, setSelectedValue] = useState("");
 
-    // function updateNotebook(updatedNotebook) {
-    //     setNotebooks(notebooks.map((notebook) => {
-    //         return (notebook.id === updateNotebook.id) ? updatedNotebook : notebook
-    //     }));
-    //     console.log("it worked.");
-    // }
-
-    
-
     const notebookList = notebooks.map((notebook) => {
         return (
             <option key={notebook.id} value={`/notebook/${notebook.id}`}>
