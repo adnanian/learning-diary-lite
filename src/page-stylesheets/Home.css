@@ -27,4 +27,32 @@
 
 #right-tab {
     float: right;
+    margin: 15px 30px;
+    border-width: 5px;
+    border-style: groove;
+    border-color: #111;
+    width: fit-content;
+    
+}
+
+label {
+    width:90px;
+    clear:left;
+    text-align:left;
+    padding-right:10px;
+}
+
+input[type="text"], label {
+    float:left;
+}
+
+.post-form > * {
+    margin: 30px 30px;
+}
+
+#notebook-form {
+    border-color: #333;
+    border-style: inset;
+    border-width: 2px;
+    background-color: lightblue;
 }

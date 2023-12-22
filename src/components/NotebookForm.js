@@ -44,24 +44,25 @@ function NotebookForm( {onAddNotebook} ) {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
+        <form id="notebook-form" className="post-form" onSubmit={handleSubmit}>
+            <h3>Add a new notebook</h3>
+            <div className="form-field">
                 <label htmlFor="title">Title</label>
                 <input id="title" name="title" type="text" value={formData.title} onChange={handleChange}/>
             </div>
-            <div>
+            <div className="form-field">
                 <label htmlFor="author">Author</label>
                 <input id="author" name="author" type="text" value={formData.author} onChange={handleChange}/>
             </div>
-            <div>
+            <div className="form-field">
                 <label htmlFor="year">Year</label>
                 <input id="year" name="year" type="text" value={formData.year} onChange={handleChange}/>
             </div>
-            <div>
+            <div className="form-field">
                 <label htmlFor="type">Type</label>
                 <input id="type" name="type" type="text" value={formData.type} onChange={handleChange}/>
             </div>
-            <div>
+            <div className="form-field">
                 <label htmlFor="length">Length</label>
                 <input id="length" name="length" type="text" value={formData.length} onChange={handleChange}/>
             </div>
