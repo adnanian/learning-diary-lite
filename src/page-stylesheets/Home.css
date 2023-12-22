@@ -24,3 +24,7 @@
     align-content: flex-end;
     justify-content: center;
 }
+
+#right-tab {
+    float: right;
+}

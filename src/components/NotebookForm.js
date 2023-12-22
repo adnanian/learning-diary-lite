@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function NotebookForm( {onAddNotebook} ) {
     const [formData, setFormData] = useState(
         {
@@ -5,7 +7,8 @@ function NotebookForm( {onAddNotebook} ) {
             author: "",
             year: "",
             type: "",
-            length: ""
+            length: "",
+            notes: ""
         }
     );
 
@@ -18,7 +21,7 @@ function NotebookForm( {onAddNotebook} ) {
 
     function handleSubmit(event) {
         event.preventDefault();
-        fetch ('http://localhost:3001/notebooks', {
+        fetch ('http://localhost:3000/notebooks', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -26,32 +29,45 @@ function NotebookForm( {onAddNotebook} ) {
             body: JSON.stringify(formData)
         })
             .then((response) => response.json())
-            .then((data) => onAddNotebook(data));
+            .then((data) => {
+                onAddNotebook(data);
+                const newFormData = {...formData};
+                for (let key in newFormData) {
+                    newFormData[key] = "";
+                    console.log(newFormData);
+                    console.log(formData);
+                    console.log(key);
+                }
+                setFormData(newFormData);
+                console.log(formData);
+            });
     }
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="title">Title</label>
-                <input id="title" name="title" type="text" value={title} onChange={handleChange}/>
+                <input id="title" name="title" type="text" value={formData.title} onChange={handleChange}/>
             </div>
             <div>
                 <label htmlFor="author">Author</label>
-                <input id="author" name="author" type="text" value={author} onChange={handleChange}/>
+                <input id="author" name="author" type="text" value={formData.author} onChange={handleChange}/>
             </div>
             <div>
                 <label htmlFor="year">Year</label>
-                <input id="year" name="year" type="text" value={year} onChange={handleChange}/>
+                <input id="year" name="year" type="text" value={formData.year} onChange={handleChange}/>
             </div>
             <div>
                 <label htmlFor="type">Type</label>
-                <input id="type" name="type" type="text" value={type} onChange={handleChange}/>
+                <input id="type" name="type" type="text" value={formData.type} onChange={handleChange}/>
             </div>
             <div>
                 <label htmlFor="length">Length</label>
-                <input id="length" name="length" type="text" value={length} onChange={handleChange}/>
+                <input id="length" name="length" type="text" value={formData.length} onChange={handleChange}/>
             </div>
             <input type="submit" />
         </form>
     );
 }
+
+export default NotebookForm;

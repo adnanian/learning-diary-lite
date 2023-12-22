@@ -48,16 +48,105 @@
       "length": "6 episodes, each 43 minutes long",
       "notes": "What a BASED documentary\nDon't believe everything that the media tells you. :)\n\nTwo of the accused didn't do it. It was someone who got away with it.\n\nIt was 5 men who killed him not 3.\n\nFBI was involved.\nAlongside NOI.\n\nAll the real killers are now deceased.\nMany in New York knew who the real killers are but wouldn't talk about it.\n\nJ Edgar Hoover was desparate to make Malcolm X look bad.",
       "id": 3
-    }
-  ],
-  "contentTypes": [
-    {
-      "name": "book",
-      "id": 1
     },
     {
-      "name": "documentary",
-      "id": 2
+      "title": "How to Win Friends and Influence People",
+      "author": "Dale Carnegie",
+      "year": "1936",
+      "type": "book",
+      "length": "291 pages",
+      "notes": "",
+      "id": 4
+    },
+    {
+      "title": "Muhammad - His Life Based on the Earliest Sources",
+      "author": "Martin Lings",
+      "year": "1983",
+      "type": "book",
+      "length": "385 pages",
+      "notes": "",
+      "id": 5
+    },
+    {
+      "title": "How to Calculate the Square and Square Root in Java?",
+      "author": "Swatee Chand",
+      "year": "2019",
+      "type": "article",
+      "length": "5 minutes to read",
+      "notes": "",
+      "id": 6
+    },
+    {
+      "title": "Javascript Analysis to SQL Injection",
+      "author": "Mostafa Elguerdawi",
+      "year": "2023",
+      "type": "article",
+      "length": "2 minute read",
+      "notes": "",
+      "id": 7
+    },
+    {
+      "title": "Dummy Content",
+      "author": "dummy author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 8
+    },
+    {
+      "title": "Dummy Content 2",
+      "author": "dummy author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 9
+    },
+    {
+      "title": "Dummy Content 3",
+      "author": "dummy author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 10
+    },
+    {
+      "title": "Dummy Content 4",
+      "author": "dummy author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 11
+    },
+    {
+      "title": "Dummy Content 5",
+      "author": "dummy author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 12
+    },
+    {
+      "title": "Dummy Content 6",
+      "author": "dummy author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 13
+    },
+    {
+      "title": "Dummy Content Final",
+      "author": "no author",
+      "year": "2023",
+      "type": "nothing",
+      "length": "no length",
+      "notes": "",
+      "id": 14
     }
   ],
   "contentWishList": []

@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import "../page-stylesheets/Home.css";
 import { useEffect, useState } from "react";
+import NotebookForm from "../components/NotebookForm";
 
 function Home( ) {
     useEffect(() => {
@@ -23,7 +24,11 @@ function Home( ) {
         );
     });
 
-    console.log(notebooks);
+    function addNotebook(newNotebook) {
+        setNotebooks([...notebooks, newNotebook]);
+        alert(`New notebook of id: ${newNotebook.id} has been created for you and added to the drop down list. :)`);
+    }
+
 
     return (
         <main>
@@ -40,6 +45,9 @@ function Home( ) {
                 </span>
             </div>
             <Outlet context={[notebooks, setNotebooks]} />
+            <aside id="right-tab">
+                <NotebookForm onAddNotebook={addNotebook} />
+            </aside>
             <br/>
         </main>
     );
