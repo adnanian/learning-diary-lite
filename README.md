@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# My Word Bank
+Author: Adnan Wazwaz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Version: 1.0
 
-## Available Scripts
+Original Date: 2023 December 22
 
-In the project directory, you can run:
+Current Version Date: 2023 December 22
 
-### `npm start`
+Adnanian Application #4
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. [Overview](#overview)
 
-### `npm test`
+2. [Installation & Execution](#installation--execution)
+    1. [Installation](#installation)
+    2. [Execution](#execution)
+3. [Usage](#usage)
+4. [Future Plans](#future-plans)
+5. [Credits](#credits)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
 
-### `npm run build`
+Learning Diary Lite is a web application that allows users to write educational and beneficial content that they consume. It serves as a space for users to explore material that they find interesting to learn (and more importantly, matter much more in life, than the nonsense that is shoved down our throats in the modern education system). With this handy tool, you never have to buy another notebook again. This is a basic application, that doesn't have user profile capabilities yet.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There are several technologies used to create this application: Firstly, the languages chosen were HTML, CSS, and JavaScript, with React.js. This application was written as an APA, with multiple pages being navigated using client side routing. Data is loaded and stored using a db.json file, powered by JSON server.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation & Execution
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+The good news is that installing this application is quite easy. This project is saved in my <a href="https://github.com/adnanian/learning-diary-lite" target="_blank">Flatiron School Phase 1 Project</a>. Please ensure that you have a GitHub account before attempting to install this application onto your local machine. Also ensure that you have Git installed on your local machine as well. If you don't, refer to <a href="https://github.com/git-guides/install-git" target="_blank">this help guide here.</a>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Once you have ensured the above two checks have passed, then all that's left is for you to fork and clone this repository. For those who are not as familiar with GitHub, here is a quick <a href="https://www.geeksforgeeks.org/difference-between-fork-and-clone-in-github/" target="_blank">GeeksForGeeks guide on forking and cloning</a>.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Execution
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the project, <b>open up your terminal</b>. Then, navigate to the directory where you have the repository cloned, and open the project. I stronly recommend opening this project with <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a>, but you may use any other application (such as Notepad++) of your choosing as long as you're able to open up the HTML file on your browser. <b>DO NOT CLOSE THE TERMINAL YET!</b>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the project is opened, you will need to ensure that you have that you have the JSON server installed onto your machine. If you don't, then type in the following command onto your terminal, and then press <strong>ENTER</strong>: <code>npm install -g json-server</code>
 
-## Learn More
+Once you have ensured that the JSON server is installed, you'll have to run it in the directory where you cloned the repository. Enter this command in that directory: <code>npm run server</code>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After that, run the application, using <code>npm run</code>. If asked to run on a different port, type "y" for "yes".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you see the following page open up on your browser, then you have followed all instructions correctly:
+![alt Successfully loaded application](./images/My%20Word%20Bank%20-%20Successfully%20Launched.png)
 
-### Code Splitting
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Use the drop down to select different notebooks of educational material. Then click the button: "GO" to load all the information.
 
-### Analyzing the Bundle Size
+Modify the notes as you wish, and then click "Save" on the bottom. This will update the information stored in the json file and reload everything.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Add new reflection questions or notes using their appropriate forms located on the right side of the home page.
 
-### Making a Progressive Web App
+On the Learning Wishlist page, use the form to add educational content that you would like to consume in the future.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The last page is the about section, which basically describes what the application does.
 
-### Advanced Configuration
+## Future Plans
+Adding login functionality.
+Deploying the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Credits
+MIT License
 
-### Deployment
+Copyright (c) 2023 Adnan Wazwaz
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-### `npm run build` fails to minify
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
