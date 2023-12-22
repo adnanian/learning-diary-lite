@@ -29,10 +29,13 @@ function Notebook() {
     const params = useParams();
     const notebooks = useOutletContext();
     const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
-    
 
     function handleUpdateNotes(event) {
         event.preventDefault();
+    }
+
+    if (!notebook) {
+        return <h1 className="loading">Loading...</h1>
     }
 
     return (
@@ -41,6 +44,7 @@ function Notebook() {
                 <InfoTable notebook={notebook} />
                 <ReflectionTable reflectionQuestions={reflectionQuestions} />
             </div>
+            <p>{!notebook ? "" : notebook.notes}</p>
             <Notes notes={!notebook ? "" : notebook.notes}/>
             <div id="right-tab">
                 <button type="submit" onClick={handleUpdateNotes}>Save Notes</button>
