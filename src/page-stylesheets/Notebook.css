@@ -86,4 +86,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#save-notes {
+    background-color: sandybrown;
+    font-size: 25px;
+    border-color: brown;
+    border-style: inset;
+    border-width: 4px;
+    text-align: center;
+    width: stretch;
+}
+
 

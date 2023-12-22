@@ -39,8 +39,8 @@ function Home( ) {
         <main>
             <h1 id="welcome-banner">Welcome to Learning Diary Lite! Let's get back to journaling our learning! :D</h1>
             <div id="note-selector">
-                <select onChange={(event) => setSelectedValue(event.target.value)}>
-                    <option disabled selected value> -- Select a Notebook -- </option>
+                <select defaultValue="0" onChange={(event) => setSelectedValue(event.target.value)}>
+                    <option key="0" disabled> -- Select a Notebook -- </option>
                     {notebookList}
                 </select>
                 <span>

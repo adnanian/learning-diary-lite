@@ -30,8 +30,20 @@ function Notebook() {
     const notebooks = useOutletContext();
     const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
 
-    function handleUpdateNotes(event) {
-        event.preventDefault();
+    function saveNotes(updatedNotes) {
+        fetch(`http://localhost:3000/notebooks/${notebook.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(
+                {
+                    notes: updatedNotes
+                }
+            )
+        })
+            .then((response) => response.json())
+            .then((data) => console.log("It worked."));
     }
 
     if (!notebook) {
@@ -45,10 +57,7 @@ function Notebook() {
                 <ReflectionTable reflectionQuestions={reflectionQuestions} />
             </div>
             <p>{!notebook ? "" : notebook.notes}</p>
-            <Notes notes={!notebook ? "" : notebook.notes}/>
-            <div id="right-tab">
-                <button type="submit" onClick={handleUpdateNotes}>Save Notes</button>
-            </div>
+            <Notes notes={!notebook ? "" : notebook.notes} onSave={saveNotes}/>
             
         </article>
     )

@@ -1,7 +1,19 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function Notes({ notes }) {
+function Notes({
+    notes,
+    onSave
+}) {
+    useEffect(() => {
+        setText(notes);
+    }, [notes])
+
     const [text, setText] = useState(notes);
+
+    function handleSubmission(event) {
+        event.preventDefault();
+        onSave(text);
+    }
 
     return (
         <div id="notes-div">
@@ -18,7 +30,7 @@ function Notes({ notes }) {
                     maxLength="1000"
                     onChange={(event) => setText(event.target.value)}
                 /><br/>
-                <button type="submit">Save</button>
+                <button id="save-notes" type="submit" onClick={handleSubmission}>Save</button>
             </form>
         </div>
     )

@@ -1,66 +1,64 @@
 {
-    "reflectionQuestions": [
-        {
-          "prompt": "Did I enjoy it?",
-          "type": "yes-or-no",
-          "id": 1
-        },
-        {
-          "prompt": "Will I benefit from this?",
-          "type": "yes-or-no",
-          "id": 2
-        },
-        {
-          "prompt": "How does this connect to me?",
-          "type": "open",
-          "id": 3
-        },
-        {
-          "prompt": "Try applying this in the real world.",
-          "type": "task",
-          "id": 4
-        }
-    ],
-    "notebooks": [
-        {
-          "title": "The One World Schoolhouse",
-          "author": "Salman Khan",
-          "year": 2012,
-          "type": "book",
-          "length": "272 pages",
-          "notes": "This was a great book.",
-          "id": 1
-        },
-        {
-          "title": "The Blue Zones of Happiness",
-          "author": "Dan Buettner",
-          "year": 2017,
-          "type": "book",
-          "length": "288 pages",
-          "notes": "This was an inspiring book.",
-          "id": 2
-        },
-        {
-          "title": "Who Killed Malcolm X?",
-          "author": "Abdur-Rahman Muhammad",
-          "year": 2017,
-          "type": "documentary",
-          "length": "6 episodes, each 43 minutes long",
-          "notes": "What a BASED documentary",
-          "id": 3
-        }
-    ],
-    "contentTypes": [
-      {
-        "name": "book",
-        "id": 1
-      },
-      {
-        "name": "documentary",
-        "id": 2
-      }
-    ],
-    "contentWishList": [
-
-    ]
+  "reflectionQuestions": [
+    {
+      "prompt": "Did I enjoy it?",
+      "type": "yes-or-no",
+      "id": 1
+    },
+    {
+      "prompt": "Will I benefit from this?",
+      "type": "yes-or-no",
+      "id": 2
+    },
+    {
+      "prompt": "How does this connect to me?",
+      "type": "open",
+      "id": 3
+    },
+    {
+      "prompt": "Try applying this in the real world.",
+      "type": "task",
+      "id": 4
+    }
+  ],
+  "notebooks": [
+    {
+      "title": "The One World Schoolhouse",
+      "author": "Salman Khan",
+      "year": 2012,
+      "type": "book",
+      "length": "272 pages",
+      "notes": "This was a great book.",
+      "id": 1
+    },
+    {
+      "title": "The Blue Zones of Happiness",
+      "author": "Dan Buettner",
+      "year": 2017,
+      "type": "book",
+      "length": "288 pages",
+      "notes": "This was an inspiring book.\n\nPeople should be learning at their own paces, and should learn beneficial stuff until they have mastered it until being labeled with some arbitrary standard of intelligence.",
+      "id": 2
+    },
+    {
+      "title": "Who Killed Malcolm X?",
+      "author": "Abdur-Rahman Muhammad",
+      "year": 2017,
+      "type": "documentary",
+      "length": "6 episodes, each 43 minutes long",
+      "notes": "What a BASED documentary",
+      "id": 3
+    }
+  ],
+  "contentTypes": [
+    {
+      "name": "book",
+      "id": 1
+    },
+    {
+      "name": "documentary",
+      "id": 2
+    }
+  ],
+  "contentWishList": []
 }
