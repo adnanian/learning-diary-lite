@@ -14,20 +14,12 @@ function Notebook() {
 
     const [reflectionQuestions, setReflectionQuestions] = useState([]);
 
-    // function addReflectionQuestion(newReflection) {
-    //     setReflectionQuestions([...reflectionQuestions, newReflection]);
-    //     console.log(`Reflection question #${newReflection.id} successfully added to the server!`);
-    // }
-
-    
-
-
     /*
     * Load notebook from outletcontext
     */
-    const context = useOutletContext();
+    const [notebooks, setNotebooks] = useOutletContext();
     const params = useParams();
-    const notebook = context.notebooks.find((notebook) => notebook.id === parseInt(params.id));
+    const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
 
     function saveNotes(updatedNotes) {
         fetch(`http://localhost:3000/notebooks/${notebook.id}`, {
@@ -42,7 +34,13 @@ function Notebook() {
             )
         })
             .then((response) => response.json())
-            .then((data) => context.onUpdateNotebook(data));
+            .then((data) => {
+                console.log(data);
+                const updatedNotebooks = notebooks.map((notebook) => {
+                    return (notebook.id === data.id) ? data : notebook;
+                });
+                setNotebooks(updatedNotebooks);
+            });
     }
 
     if (!notebook) {
