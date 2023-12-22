@@ -3,7 +3,7 @@ import { useState } from "react";
 function ReflectionForm( {onAddReflection} ) {
     const [formData, setFormData] = useState({
         prompt: "",
-        type: ""
+        type: "open"
     });
 
     function handleChange(event) {
@@ -33,7 +33,7 @@ function ReflectionForm( {onAddReflection} ) {
         <form id="reflection-form" className="post-form" onSubmit={handleSubmit}>
             <h3>Add a New Reflection Question</h3>
             <div className="form-field">
-                <label className="form-field" htmlFor="prompt">Prompt</label>
+                <label htmlFor="prompt">Prompt</label>
                 <input
                     id="prompt"
                     type="text"
@@ -42,14 +42,19 @@ function ReflectionForm( {onAddReflection} ) {
                     onChange={handleChange}
                 />
             </div>
-            <div>
-                <select value={formData.type} onChange={handleChange}>
+            <div className="formField">
+                <label htmlFor="type-drop-down">Type</label>
+                <select 
+                    id="type-drop-down"  
+                    name="type" 
+                    value={formData.type}
+                    onChange={handleChange}>
                     <option key="open" value="open" selected>Open Question</option>
-                    <option key="yes-and-no" value="yes-or-no">Yes or No Question</option>
+                    <option key="yes-or-no" value="yes-or-no">Yes or No Question</option>
                     <option key="task" value="task">Task</option>
                 </select>
             </div>
-            <input type="submit" />
+            <input id="submit-reflection" type="submit" />
         </form>
     );
 }

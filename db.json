@@ -19,6 +19,21 @@
       "prompt": "Try applying this in the real world.",
       "type": "task",
       "id": 4
+    },
+    {
+      "prompt": "What was your favorite part?",
+      "type": "open",
+      "id": 5
+    },
+    {
+      "prompt": "Talk to somebody about it.",
+      "type": "task",
+      "id": 6
+    },
+    {
+      "prompt": "Talk to somebody else about it,",
+      "type": "task",
+      "id": 7
     }
   ],
   "notebooks": [

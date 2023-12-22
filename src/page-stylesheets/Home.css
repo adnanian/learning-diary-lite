@@ -27,7 +27,7 @@
 
 #right-tab {
     float: right;
-    margin: 15px 30px;
+    margin: 15px 100px;
     border-width: 5px;
     border-style: groove;
     border-color: #111;
@@ -42,7 +42,7 @@ label {
     padding-right:10px;
 }
 
-input[type="text"], label {
+input[type="text"], label, .label {
     float:left;
 }
 
@@ -50,9 +50,21 @@ input[type="text"], label {
     margin: 30px 30px;
 }
 
-#notebook-form {
+#notebook-form, #reflection-form {
     border-color: #333;
     border-style: inset;
     border-width: 2px;
+}
+
+#notebook-form {
+    background-color: lightgreen;
+}
+
+#reflection-form {
     background-color: lightblue;
+}
+
+#submit-reflection {
+    margin-top: inherit;
+    margin-left: 39%;
 }

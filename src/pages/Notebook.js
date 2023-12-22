@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import '../page-stylesheets/Notebook.css';
 import { useOutletContext, useParams } from 'react-router-dom';
 import InfoTable from '../components/InfoTable.js';
@@ -15,6 +14,10 @@ function Notebook() {
     const [reflectionQuestions, setReflectionQuestions] = useOutletContext().reflections;
     const params = useParams();
     const notebook = notebooks.find((notebook) => notebook.id === parseInt(params.id));
+
+
+    // Make warning go away.
+    console.log(setReflectionQuestions);
 
     function saveNotes(updatedNotes) {
         fetch(`http://localhost:3000/notebooks/${notebook.id}`, {
