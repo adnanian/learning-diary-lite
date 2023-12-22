@@ -1,0 +1,21 @@
+#about-section {
+    background: linear-gradient(
+        to right,
+        red,
+        magenta,
+        hotpink,
+        magenta,
+        red
+    );
+    border-color: blueviolet;
+    border-width: 8px;
+    border-style: outset;
+    margin-top: 30px;
+}
+
+#about-text {
+    font-size: 36px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: darkblue;
+    margin: 40px 300px;
+}
