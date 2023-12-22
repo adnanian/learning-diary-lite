@@ -45,7 +45,7 @@ function NotebookForm( {onAddNotebook} ) {
 
     return (
         <form id="notebook-form" className="post-form" onSubmit={handleSubmit}>
-            <h3>Add a new notebook</h3>
+            <h3>Add a New Notebook</h3>
             <div className="form-field">
                 <label htmlFor="title">Title</label>
                 <input id="title" name="title" type="text" value={formData.title} onChange={handleChange}/>
