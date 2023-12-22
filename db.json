@@ -34,6 +34,16 @@
       "prompt": "Talk to somebody else about it,",
       "type": "task",
       "id": 7
+    },
+    {
+      "prompt": "Do something cool",
+      "type": "task",
+      "id": 8
+    },
+    {
+      "prompt": "Try something new",
+      "type": "task",
+      "id": 9
     }
   ],
   "notebooks": [
@@ -43,7 +53,7 @@
       "year": 2012,
       "type": "book",
       "length": "272 pages",
-      "notes": "This was a great book.\n\nPeople should be learning at their own paces, and should learn beneficial stuff until they have mastered it until being labeled with some arbitrary standard of intelligence.\n\n- \"Never let schooling interfere with education\" - Mark Twain\n\nOur modern education system is from what Sal Khan calls \"the broken model\" (aka the Prussian Model)\n\nCheck out mastery learning - really check it out.\nRuns website: Khan Academy\n\ntechnology could revolutionize learning\n",
+      "notes": "This was a great book.\n\nPeople should be learning at their own paces, and should learn beneficial stuff until they have mastered it until being labeled with some arbitrary standard of intelligence.\n\n- \"Never let schooling interfere with education\" - Mark Twain\n\nOur modern education system is from what Sal Khan calls \"the broken model\" (aka the Prussian Model)\n\nCheck out mastery learning - really check it out.\nRuns website: Khan Academy\n\ntechnology could revolutionize learning\n\nlearning is fun\n",
       "id": 1
     },
     {
@@ -52,7 +62,7 @@
       "year": 2017,
       "type": "book",
       "length": "288 pages",
-      "notes": "This was an inspiring book.\n\nAlways take walks outdoors in nature.\nMeditate.\n\nBe around communities - family ties - find religion.\neat healthy\nmanage your money well\nstay active",
+      "notes": "This was an inspiring book.\n\nAlways take walks outdoors in nature.\nMeditate.\n\nBe around communities - family ties - find religion.\neat healthy\nmanage your money well\nstay active\nhave fun\nhave some fun and enjoy life",
       "id": 2
     },
     {
@@ -70,7 +80,7 @@
       "year": "1936",
       "type": "book",
       "length": "291 pages",
-      "notes": "",
+      "notes": "afasdfadf",
       "id": 4
     },
     {
@@ -162,6 +172,15 @@
       "length": "no length",
       "notes": "",
       "id": 14
+    },
+    {
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "year": "1960",
+      "type": "book",
+      "length": "281 pages",
+      "notes": "teaches us about racism",
+      "id": 15
     }
   ],
   "learningWishlist": [
@@ -176,6 +195,10 @@
     {
       "savedTitle": "The Sealed Nectar",
       "id": 3
+    },
+    {
+      "savedTitle": "Huckleberry Finn",
+      "id": 4
     }
   ]
 }
