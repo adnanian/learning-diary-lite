@@ -1,5 +1,6 @@
 import "../page-stylesheets/About.css";
 
+// Description of application
 function About() {
     return (
         <main id="about-section">

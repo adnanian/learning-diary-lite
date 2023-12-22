@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+// User's saved notes.
 function Notes({
     notes,
     onSave
@@ -10,6 +11,7 @@ function Notes({
 
     const [text, setText] = useState(notes);
 
+    // Save notes to the db.json file and re-render components.
     function handleSubmission(event) {
         event.preventDefault();
         onSave(text);

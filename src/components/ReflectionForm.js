@@ -1,11 +1,14 @@
 import { useState } from "react";
 
+// Add new reflection questions.
 function ReflectionForm( {onAddReflection} ) {
     const [formData, setFormData] = useState({
         prompt: "",
         type: "open"
     });
 
+
+    // Update controlled form values.
     function handleChange(event) {
         setFormData({
             ...formData,
@@ -13,6 +16,7 @@ function ReflectionForm( {onAddReflection} ) {
         });
     }
 
+    // Add a new reflection question to the db.json file and state array.
     function handleSubmit(event) {
         event.preventDefault();
         fetch('http://localhost:3000/reflectionQuestions', {

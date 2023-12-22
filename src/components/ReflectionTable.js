@@ -1,5 +1,6 @@
 import ContentTableRow from "./ContentTableRow";
 
+// Display reflection questions as table
 function ReflectionTable({ reflectionQuestions }) {
     const tableRows = reflectionQuestions.map((reflection, index) => {
         return (

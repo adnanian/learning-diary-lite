@@ -1,5 +1,6 @@
 import ContentTableRow from "./ContentTableRow";
 
+// Display information about the notebook (excluding the notes)
 function InfoTable({ notebook }) {
     return (
         <div id="info-tab">

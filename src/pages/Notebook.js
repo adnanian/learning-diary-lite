@@ -41,10 +41,12 @@ function Notebook() {
             });
     }
 
+    // If no notebook is loaded, display a loading page, so no error occurs.
     if (!notebook) {
         return <h1 className="loading">Loading...</h1>
     }
 
+    // If there is a notebook, load everything.
     return (
         <article id="notes-view">
             <div id="left-tab">

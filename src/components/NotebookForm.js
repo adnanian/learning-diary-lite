@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+// Allows users to add new sets of notes.
 function NotebookForm( {onAddNotebook} ) {
     const [formData, setFormData] = useState(
         {
@@ -12,6 +13,7 @@ function NotebookForm( {onAddNotebook} ) {
         }
     );
 
+    // Update controlled form values.
     function handleChange(event) {
         setFormData({
             ...formData,
@@ -19,6 +21,7 @@ function NotebookForm( {onAddNotebook} ) {
         });
     }
 
+    // Add a new notebook to the db.json file and state array.
     function handleSubmit(event) {
         event.preventDefault();
         fetch ('http://localhost:3000/notebooks', {
@@ -31,6 +34,7 @@ function NotebookForm( {onAddNotebook} ) {
             .then((response) => response.json())
             .then((data) => {
                 onAddNotebook(data);
+                // Have to declare a new variable in order to reset form values. Otherwise, this won't work.
                 const newFormData = {...formData};
                 for (let key in newFormData) {
                     newFormData[key] = "";

@@ -5,6 +5,8 @@ import NotebookForm from "../components/NotebookForm";
 import ReflectionForm from "../components/ReflectionForm";
 
 function Home( ) {
+
+    // Load notebooks
     useEffect(() => {
         fetch('http://localhost:3000/notebooks')
           .then((response) => response.json())
@@ -14,12 +16,14 @@ function Home( ) {
           });
     }, []);
 
+    // Load reflection questions
     useEffect(() => {
         fetch('http://localhost:3000/reflectionQuestions')
             .then((response) => response.json())
             .then((data) => setReflectionQuestions(data));
     }, []);
 
+    // states
     const [notebooks, setNotebooks] = useState([]);
     const [reflectionQuestions, setReflectionQuestions] = useState([]);
     const [selectedValue, setSelectedValue] = useState("0");
@@ -32,11 +36,13 @@ function Home( ) {
         );
     });
 
+    // add notebook to state array
     function addNotebook(newNotebook) {
         setNotebooks([...notebooks, newNotebook]);
         alert(`New notebook of id: ${newNotebook.id} has been created for you and added to the drop down list. :)`);
     }
 
+    // add reflection to state array
     function addReflection(newReflection) {
         setReflectionQuestions([...reflectionQuestions, newReflection]);
     }

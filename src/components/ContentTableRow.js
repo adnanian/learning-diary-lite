@@ -1,5 +1,6 @@
 import './ContentTableRow.css';
 
+// Purpose of this component is to make adding tables easier.
 function ContentTableRow( {
     rowNumber = 0, 
     propertyName, 
